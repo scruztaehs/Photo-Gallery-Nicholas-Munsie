@@ -1,0 +1,87 @@
+.picture {
+    /*
+    Lay the picture containers out one after the other. (To see why
+    this line is important, try changing it to 'block' or 'inline'.)
+    */
+    display: inline-block;
+
+    /* add a little space between each picture and the next */
+    margin: 10px;
+}
+
+.gallery img {
+    /*
+    The original images are all different sizes but we need
+    them to be consistent for the gallery layout to look good.
+    */
+    height: 200px;
+    border: 10px double black;
+    margin-top: 150px;
+
+
+    /* add an outline around each picture */
+   
+}
+
+.gallery p {
+    text-align: center;
+    margin-top: 0;
+    margin-bottom: 10px;
+}
+
+figcaption {
+    text-align: center;
+    color:white;
+    font-size: 30px;
+    margin:10px;
+}
+
+body{
+    text-align:center;
+    background:url(https://images.hdqwalls.com/wallpapers/retrowave-sunrise-reflection-clear-sky-4k-3a.jpg);
+    color:gold;
+    background-size: cover;
+    text-align: center;
+    background-repeat: no-repeat;
+}
+
+span {
+    -webkit-text-stroke-width: 1.25px;
+    -webkit-text-stroke-color: #000;
+    font-size: 30px;
+    text-shadow: 0 0px #f3c623, 0 0px #f2aaaa;
+    transform: translate(0, 100%) rotate(4deg);
+    animation: jump 2s ease-in-out infinite;
+    display: inline-block;
+    font-family: "Titan One", cursive;
+    color: #fff;
+}
+
+@keyframes jump {
+  33% {
+    text-shadow: 0 60px #f37121, 0 150px #f2aaaa;
+  }
+  50% {
+    transform: translate(0, 0) rotate(-4deg);
+    text-shadow: 0 0px #8fc0a9, 0 0px #84a9ac;
+  }
+  66.67% {
+    text-shadow: 0 -60px #d54062, 0 -150px #8fc0a9;
+  }
+}
+
+.space {
+    margin: 200px;
+}
+
+.head-space {
+    margin: 30px;
+}
+
+
+button {
+    border:solid 1px red;
+    background-color: red;
+    color: white;
+    font-size: 15px;  
+}
